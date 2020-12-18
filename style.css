@@ -1,0 +1,53 @@
+#main-body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    line-height: 2em;
+}
+#navbar {
+    height: 1vh;
+}
+#doc-title {
+    position: fixed;
+}
+#toc {
+    position: fixed;
+    left: 0;
+    top: 4em;
+}
+.nav-link {
+    text-decoration: none;
+    display: block;
+    color:black;
+    margin-left:2em;
+    
+}
+#main-doc {
+    margin: 0.5em 1.5em;
+}
+.bgtext {
+    background-color: aliceblue;
+    width: 90%;
+    margin: 0px auto;
+    padding: 0 1em;
+}
+@media screen and (max-width:600px) {
+    #main-body {
+        display: block;
+    }
+    #doc-title {
+        position: relative;
+        text-align: center;
+    }
+    #toc {
+        position: relative;
+        display: block;
+        top: 0em;
+        width: 70%;
+        margin: 0px auto;
+    }
+    #main-doc {
+        margin-top: 23em;
+    }
+    
+}
